@@ -19,6 +19,9 @@
 		BC880BCA18D11E0600825551 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC880BB218D11E0600825551 /* UIKit.framework */; };
 		BC880BD218D11E0600825551 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC880BD018D11E0600825551 /* InfoPlist.strings */; };
 		BC880BD418D11E0600825551 /* W4CollectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC880BD318D11E0600825551 /* W4CollectionsTests.m */; };
+		BC880BE018D16EBB00825551 /* W4GridTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = BC880BDF18D16EBB00825551 /* W4GridTypes.m */; };
+		BC880BE318D16F5000825551 /* W4GridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BC880BE218D16F5000825551 /* W4GridLayout.m */; };
+		BC880BE818D1732400825551 /* W4SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC880BE718D1732400825551 /* W4SampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		BC880BCF18D11E0600825551 /* W4CollectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "W4CollectionsTests-Info.plist"; sourceTree = "<group>"; };
 		BC880BD118D11E0600825551 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC880BD318D11E0600825551 /* W4CollectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = W4CollectionsTests.m; sourceTree = "<group>"; };
+		BC880BDE18D16EBB00825551 /* W4GridTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W4GridTypes.h; sourceTree = "<group>"; };
+		BC880BDF18D16EBB00825551 /* W4GridTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W4GridTypes.m; sourceTree = "<group>"; };
+		BC880BE118D16F5000825551 /* W4GridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W4GridLayout.h; sourceTree = "<group>"; };
+		BC880BE218D16F5000825551 /* W4GridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W4GridLayout.m; sourceTree = "<group>"; };
+		BC880BE618D1732400825551 /* W4SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W4SampleViewController.h; sourceTree = "<group>"; };
+		BC880BE718D1732400825551 /* W4SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W4SampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +116,13 @@
 		BC880BB418D11E0600825551 /* W4Collections */ = {
 			isa = PBXGroup;
 			children = (
+				BC880BDD18D16EA800825551 /* W4Grid */,
 				BC880BBD18D11E0600825551 /* AppDelegate.h */,
 				BC880BBE18D11E0600825551 /* AppDelegate.m */,
 				BC880BC018D11E0600825551 /* Images.xcassets */,
 				BC880BB518D11E0600825551 /* Supporting Files */,
+				BC880BE618D1732400825551 /* W4SampleViewController.h */,
+				BC880BE718D1732400825551 /* W4SampleViewController.m */,
 			);
 			path = W4Collections;
 			sourceTree = "<group>";
@@ -142,6 +154,17 @@
 				BC880BD018D11E0600825551 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC880BDD18D16EA800825551 /* W4Grid */ = {
+			isa = PBXGroup;
+			children = (
+				BC880BDE18D16EBB00825551 /* W4GridTypes.h */,
+				BC880BDF18D16EBB00825551 /* W4GridTypes.m */,
+				BC880BE118D16F5000825551 /* W4GridLayout.h */,
+				BC880BE218D16F5000825551 /* W4GridLayout.m */,
+			);
+			name = W4Grid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC880BE318D16F5000825551 /* W4GridLayout.m in Sources */,
+				BC880BE818D1732400825551 /* W4SampleViewController.m in Sources */,
+				BC880BE018D16EBB00825551 /* W4GridTypes.m in Sources */,
 				BC880BBF18D11E0600825551 /* AppDelegate.m in Sources */,
 				BC880BBB18D11E0600825551 /* main.m in Sources */,
 			);
