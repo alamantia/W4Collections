@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3A9CB21961CC2300F68323 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A9CB11961CC2300F68323 /* Main_Storyboard.storyboard */; };
+		BC3A9CB31961CC2300F68323 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A9CB11961CC2300F68323 /* Main_Storyboard.storyboard */; };
 		BC880BAF18D11E0600825551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC880BAE18D11E0600825551 /* Foundation.framework */; };
 		BC880BB118D11E0600825551 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC880BB018D11E0600825551 /* CoreGraphics.framework */; };
 		BC880BB318D11E0600825551 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC880BB218D11E0600825551 /* UIKit.framework */; };
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC3A9CB11961CC2300F68323 /* Main_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_Storyboard.storyboard; sourceTree = "<group>"; };
 		BC880BAB18D11E0600825551 /* W4Collections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W4Collections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC880BAE18D11E0600825551 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC880BB018D11E0600825551 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +89,7 @@
 		BC880BA218D11E0600825551 = {
 			isa = PBXGroup;
 			children = (
+				BC3A9CB11961CC2300F68323 /* Main_Storyboard.storyboard */,
 				BC880BB418D11E0600825551 /* W4Collections */,
 				BC880BCD18D11E0600825551 /* W4CollectionsTests */,
 				BC880BAD18D11E0600825551 /* Frameworks */,
@@ -244,6 +248,7 @@
 			files = (
 				BC880BB918D11E0600825551 /* InfoPlist.strings in Resources */,
 				BC880BC118D11E0600825551 /* Images.xcassets in Resources */,
+				BC3A9CB21961CC2300F68323 /* Main_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3A9CB31961CC2300F68323 /* Main_Storyboard.storyboard in Resources */,
 				BC880BD218D11E0600825551 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +397,7 @@
 				GCC_PREFIX_HEADER = "W4Collections/W4Collections-Prefix.pch";
 				INFOPLIST_FILE = "W4Collections/W4Collections-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,6 +411,7 @@
 				GCC_PREFIX_HEADER = "W4Collections/W4Collections-Prefix.pch";
 				INFOPLIST_FILE = "W4Collections/W4Collections-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -469,6 +477,7 @@
 				BC880BD918D11E0600825551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC880BDA18D11E0600825551 /* Build configuration list for PBXNativeTarget "W4CollectionsTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +486,7 @@
 				BC880BDC18D11E0600825551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rj4-Rg-vmk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Sample View Controller-->
+        <scene sceneID="CS5-3F-Xxh">
+            <objects>
+                <viewController id="rj4-Rg-vmk" customClass="W4SampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I5K-Lw-nfI"/>
+                        <viewControllerLayoutGuide type="bottom" id="nxx-Ld-wnU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uKn-xF-JQC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lv5-j7-Fu9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewLayout key="collectionViewLayout" id="0o6-Xi-FQK" customClass="W4GridLayout"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rj4-Rg-vmk" id="kn5-1N-8TB"/>
+                                    <outlet property="delegate" destination="rj4-Rg-vmk" id="9nY-UY-Kga"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nxx-Ld-wnU" firstAttribute="top" secondItem="lv5-j7-Fu9" secondAttribute="bottom" id="JFq-tH-cc5"/>
+                            <constraint firstItem="lv5-j7-Fu9" firstAttribute="leading" secondItem="uKn-xF-JQC" secondAttribute="leading" id="iZT-N8-Xq4"/>
+                            <constraint firstAttribute="trailing" secondItem="lv5-j7-Fu9" secondAttribute="trailing" id="mpR-yE-8Fj"/>
+                            <constraint firstItem="lv5-j7-Fu9" firstAttribute="top" secondItem="uKn-xF-JQC" secondAttribute="top" id="oeJ-zl-knd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="lv5-j7-Fu9" id="Nbq-L4-dFi"/>
+                        <outlet property="view" destination="uKn-xF-JQC" id="sYF-92-qry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpB-d0-OiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="-26"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -46,6 +46,8 @@
     [super prepareLayout];
 }
 
+/* adjust to take pages into account for scrolling .. */
+
 - (UICollectionViewLayoutAttributes *) layoutUsingTemplateAtIndexPath : (NSIndexPath *)indexPath {
     W4LayoutTemplate *template = [self.layouts objectAtIndex:self.currentLayout];
     W4LayoutObject   *lo       = [template.layoutObjects objectAtIndex:indexPath.row];
@@ -57,10 +59,13 @@
     float height = self.collectionView.frame.size.height;
     float width  = self.collectionView.frame.size.width;
     CGRect frame = CGRectZero;
+    
     frame.size   = CGSizeMake( (width * lo.size.width)  - (self.cellMargin/2),
                               (height * lo.size.height) - (self.cellMargin/2));
+    
     frame.origin = CGPointMake((lo.position.x * width)  + (self.cellMargin/2),
                                (lo.position.y * height) + (self.cellMargin/2));
+    
     currentItemAttributes.frame = frame;
     currentItemAttributes.size  = frame.size;
     return currentItemAttributes;
